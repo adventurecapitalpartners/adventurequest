@@ -4,9 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: ac-mcp-server
+    startCommand: python3 -m ac_mcp_server
     envVars:
-      - key: ACTIVE_CAMPAIGN_API_URL
+      - key: https://churchfuel.api-us1.com
         sync: false
-      - key: ACTIVE_CAMPAIGN_API_KEY
+      - key: 00fb3b7f8c5589934b9e13ed1a2f1a28682233592dcb8726324500d90de7cadb42f00df5
         sync: false
