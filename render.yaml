@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ac-mcp-server
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: ac-mcp-server
+    envVars:
+      - key: ACTIVE_CAMPAIGN_API_URL
+        sync: false
+      - key: ACTIVE_CAMPAIGN_API_KEY
+        sync: false
